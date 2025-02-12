@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #f97316;
+            --info: #0ea5e9;
+            --success: #22c55e;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-slate-900 text-white">
+
+    <!-- Navbar -->
+    <header
+        class="fixed w-full top-0 z-50 backdrop-blur-lg bg-slate-900/80 border-b border-[var(--primary)] border-opacity-20">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="public/app-logo.png" loading="lazy" height="50" width="250" alt="App Logo">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-[var(--info)] hover:text-[var(--secondary)] transition-colors">Home</a>
+                <a href="#about" class="text-[var(--info)] hover:text-[var(--secondary)] transition-colors">About</a>
+                <a href="#services"
+                    class="text-[var(--info)] hover:text-[var(--secondary)] transition-colors">Services</a>
+                <a href="#testimonials"
+                    class="text-[var(--info)] hover:text-[var(--secondary)] transition-colors">Testimonials</a>
+                <a href="#faq" class="text-[var(--info)] hover:text-[var(--secondary)] transition-colors">FAQ</a>
+                <a href="#contact"
+                    class="text-[var(--info)] hover:text-[var(--secondary)] transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#login"
+                    class="px-4 py-2 text-[var(--info)] hover:text-[var(--secondary)] transition-colors">Login</a>
+                <a href="#signup"
+                    class="px-4 py-2 bg-[var(--secondary)] text-black rounded-lg hover:bg-[var(--info)] transition-all duration-300">Get
+                    Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 py-4 space-y-3 bg-slate-900/95">
+            <a href="#home" class="block text-[var(--info)] hover:text-[var(--secondary)] py-2">Home</a>
+            <a href="#about" class="block text-[var(--info)] hover:text-[var(--secondary)] py-2">About</a>
+            <a href="#services" class="block text-[var(--info)] hover:text-[var(--secondary)] py-2">Services</a>
+            <a href="#testimonials" class="block text-[var(--info)] hover:text-[var(--secondary)] py-2">Testimonials</a>
+            <a href="#faq" class="block text-[var(--info)] hover:text-[var(--secondary)] py-2">FAQ</a>
+            <a href="#contact" class="block text-[var(--info)] hover:text-[var(--secondary)] py-2">Contact</a>
+            <div class="pt-4 space-y-3">
+                <a href="#login" class="block text-[var(--info)] hover:text-[var(--secondary)] py-2">Login</a>
+                <a href="#signup"
+                    class="block w-full px-4 py-2 bg-[var(--secondary)] text-black text-center rounded-lg hover:bg-[var(--info)]">Get
+                    Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- First Section -->
+    <section class="relative min-h-screen bg-gradient-to-b from-slate-900 to-black">
+        <div class="container mx-auto px-8 h-screen flex items-center">
+            <!-- Left Content -->
+            <div class="w-full md:w-3/6 space-y-4">
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-3 bg-[var(--primary)] bg-opacity-10 rounded-full pl-2 pr-4 py-1">
+                    <span
+                        class="bg-[var(--secondary)] text-black text-xs font-semibold px-2 py-1 rounded-full">NEW</span>
+                    <span class="text-[var(--info)]">All-in-One Crypto Solution</span>
+                </div>
+                <!-- Main Content -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+                    Your Digital Wallet for a Smarter Future
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl text-[var(--info)] max-w-xl leading-relaxed">
+                    The ultimate app for buying, staking, and exchanging crypto, with a secure personal wallet. Take
+                    control of your crypto with unique wallets and effortless transactions
+                </p>
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#signup"
+                        class="px-8 py-4 bg-[var(--secondary)] text-black font-semibold rounded-lg hover:bg-[var(--info)] transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            <!-- Right Content -->
+            <div class="hidden md:block pl-20">
+                <div class="relative">
+                    <div class="relative z-20 bg-opacity-10 p-2 rounded-2xl">
+                        <img src="public/landing-hero-section-image.png" height="200px" alt="Hero Section Image"
+                            class="rounded-xl">
+                    </div>
+                    <div
+                        class="absolute top-1/2 -right-20 w-40 h-40 bg-[var(--secondary)] rounded-full blur-3xl opacity-20">
+                    </div>
+                    <div
+                        class="absolute bottom-20 -left-20 w-40 h-40 bg-[var(--info)] rounded-full blur-3xl opacity-20">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="relative py-5 bg-slate-900" id="about">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Left Side - Image -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div class="relative z-20 bg-opacity-10 p-2 rounded-2xl">
+                            <img src="public/landing-about-section-image.png" alt="About Us" class="rounded-xl w-full">
+                        </div>
+                        <!-- Background Effects -->
+                        <div
+                            class="absolute top-1/2 -right-20 w-40 h-40 bg-[var(--secondary)] rounded-full blur-3xl opacity-20">
+                        </div>
+                        <div
+                            class="absolute bottom-20 -left-20 w-40 h-40 bg-[var(--info)] rounded-full blur-3xl opacity-20">
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side - Content -->
+                <div class="w-full lg:w-1/2 space-y-8">
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-[var(--primary)] bg-opacity-10 rounded-full px-4 py-2">
+                        <span class="w-2 h-2 rounded-full bg-[var(--secondary)]"></span>
+                        <span class="text-[var(--info)]">About Our Platform</span>
+                    </div>
+                    <!-- Title & Description -->
+                    <div>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Your Partner in the Crypto Revolution
+                        </h2>
+                        <p class="text-[var(--info)] text-lg">mission is to make cryptocurrency accessible and secure
+                            for everyone. With a user-friendly interface, powerful features like staking and real-time
+                            exchanges, and a secure wallet system, we’re here to support your crypto journey every step
+                            of the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="relative py-5 bg-slate-900" id="services">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-4">
+                <div
+                    class="inline-flex items-center gap-2 bg-[var(--primary)] bg-opacity-10 rounded-full px-4 py-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-[var(--secondary)]"></span>
+                    <span class="text-[var(--info)]">Our Services</span>
+                </div>
+                <h2 class="text-5xl font-bold text-white mb-6">Comprehensive Crypto Solutions</h2>
+                <p class="text-[var(--info)] text-lg max-w-2xl mx-auto">Explore our range of services designed to meet
+                    your cryptocurrency needs</p>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center gap-12 ">
+                <div class="w-full lg:w-1/2">
+                    <div class="grid grid-cols-1 gap-4">
+                        <div
+                            class="group relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-6 hover:scale-105 transition-all h-[152px]">
+                            <div class="w-16 h-16 bg-[var(--secondary)] rounded-xl flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Purchase Crypto</h3>
+                            <p class="text-[var(--info)]">Purchase cryptocurrencies easily with competitive rates and
+                                multiple payment options.</p>
+                        </div>
+                        <div
+                            class="group relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-6 hover:scale-105 transition-all h-[152px]">
+                            <div class="w-16 h-16 bg-[var(--info)] rounded-xl flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Staking</h3>
+                            <p class="text-[var(--info)]">Earn passive income by staking your crypto assets with
+                                competitive APY rates.</p>
+                        </div>
+                        <div
+                            class="group relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-6 hover:scale-105 transition-all h-[152px]">
+                            <div class="w-16 h-16 bg-[var(--success)] rounded-xl flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Exchange</h3>
+                            <p class="text-[var(--info)]">Swap between different cryptocurrencies instantly with best
+                                market rates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="relative z-20 bg-opacity-10 p-2 rounded-2xl">
+                        <img src="public/landing-service-section-image.png" alt="About Us" class="rounded-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
