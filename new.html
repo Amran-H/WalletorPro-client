@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"></script>
+
+
     <style>
         :root {
             --primary: #1e40af;
@@ -229,6 +233,172 @@
     </section>
 
 
+    <section class="relative py-5 bg-slate-900" id="how-it-works">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-6 text-blue-500">How It Works</h2>
+
+            <div class="relative">
+                <!-- Left Arrow -->
+                <button
+                    class="absolute left-5 top-1/2 -translate-y-1/2 bg-blue-900 text-3xl text-black font-bold px-1 rounded-full shadow-md z-20"
+                    id="prevSlide">
+                    &lt;
+                </button>
+
+                <div class="splide" id="howItWorks-slider">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <!-- Buy & Sell Crypto -->
+                            <div class="splide__slide mb-20">
+                                <h3 class="text-2xl font-semibold mb-8 text-center text-[var(--primary)]">Buy & Sell
+                                    Crypto</h3>
+                                <div class="relative">
+                                    <div class="grid lg:grid-cols-3 gap-8">
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--secondary)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-black">01</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Select Coin</h4>
+                                                <p class="text-[var(--info)]">Choose the cryptocurrency you want to buy
+                                                    or sell</p>
+                                            </div>
+                                        </div>
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--info)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-white">02</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Enter Amount</h4>
+                                                <p class="text-[var(--info)]">Specify the amount and choose payment
+                                                    method</p>
+                                            </div>
+                                        </div>
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--success)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-white">03</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Complete Transaction</h4>
+                                                <p class="text-[var(--info)]">Confirm and receive coins in your wallet
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Staking -->
+                            <div class="splide__slide mb-20">
+                                <h3 class="text-2xl font-semibold mb-8 text-center text-[var(--primary)]">Staking</h3>
+                                <div class="relative">
+                                    <div class="grid lg:grid-cols-3 gap-8">
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--secondary)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-black">01</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Choose Staking Plan</h4>
+                                                <p class="text-[var(--info)]">Select from available coins and durations
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--info)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-white">02</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Lock Period</h4>
+                                                <p class="text-[var(--info)]">Lock your assets for the chosen duration
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--success)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-white">03</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Earn Rewards</h4>
+                                                <p class="text-[var(--info)]">Receive staking rewards after completion
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Exchange -->
+                            <div class="splide__slide mb-20">
+                                <h3 class="text-2xl font-semibold mb-8 text-center text-[var(--primary)]">Exchange</h3>
+                                <div class="relative">
+                                    <div class="grid lg:grid-cols-3 gap-8">
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--secondary)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-black">01</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Select Pairs</h4>
+                                                <p class="text-[var(--info)]">Choose the cryptocurrencies to exchange
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--info)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-white">02</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Lock Period</h4>
+                                                <p class="text-[var(--info)]">Lock your assets for the chosen duration
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="group relative">
+                                            <div
+                                                class="relative bg-[var(--primary)] bg-opacity-10 rounded-2xl p-8 hover:transform hover:scale-105 transition-all">
+                                                <div
+                                                    class="w-16 h-16 bg-[var(--success)] rounded-xl flex items-center justify-center mb-6">
+                                                    <span class="text-xl font-bold text-white">03</span>
+                                                </div>
+                                                <h4 class="text-2xl font-bold text-white mb-4">Earn Rewards</h4>
+                                                <p class="text-[var(--info)]">Receive staking rewards after completion
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Arrow -->
+                <button
+                    class="absolute right-5 top-1/2 -translate-y-1/2 bg-blue-900 text-white rounded-full shadow-md z-20 text-3xl text-black font-bold px-1"
+                    id="nextSlide">
+                    &gt;
+                </button>
+            </div>
+        </div>
+    </section>
+
+
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
 
@@ -236,6 +406,26 @@
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+
+        <!-- for services slider -->
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('#howItWorks-slider', {
+                type: 'slide',
+                perPage: 1,
+                perMove: 1,
+                pagination: false,
+                arrows: false,
+            }).mount();
+
+            document.getElementById('prevSlide').addEventListener('click', function () {
+                splide.go('-1');
+            });
+
+            document.getElementById('nextSlide').addEventListener('click', function () {
+                splide.go('+1');
+            });
         });
     </script>
 </body>
